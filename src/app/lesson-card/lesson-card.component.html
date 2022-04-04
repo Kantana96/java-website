@@ -1,0 +1,14 @@
+<mat-card class="mat-elevation-z4">
+  <mat-card-header>
+    <mat-card-title>{{ lesson.name }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="lesson.imgUrl" />
+  <mat-card-content>
+    <p>{{ lesson.description }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="goToLesson()">LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
+<router-outlet></router-outlet>

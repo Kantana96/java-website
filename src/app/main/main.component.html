@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="font-size: 24px;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="font-size: 20px;">Lessons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="logOut()" style="font-size: 20px;">Log out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container" style="padding-top: 64px;">
+  <div class="jumbotron">
+    <h1>Learning Java is easy with us now!</h1>
+    <p>Using our website you can make Java learning easier. Starting from first lesson, go through all courses. </p>
+  </div>
+</div>
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="33%">
+      <app-lesson-card [lesson]="lesson"></app-lesson-card>
+    </div>
+    <div fxFlex="33%">
+      <app-lesson-card [lesson]="lesson"></app-lesson-card>
+    </div>
+    <div fxFlex="33%">
+      <app-lesson-card [lesson]="lesson"></app-lesson-card>
+    </div>
+    <div fxFlex="33%">
+      <app-lesson-card [lesson]="lesson"></app-lesson-card>
+    </div>
+    <div fxFlex="33%">
+      <app-lesson-card [lesson]="lesson"></app-lesson-card>
+    </div>
+    <div fxFlex="33%">
+      <app-lesson-card [lesson]="lesson"></app-lesson-card>
+    </div>
+  </div>
+</div>

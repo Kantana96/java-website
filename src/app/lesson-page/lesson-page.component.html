@@ -1,0 +1,25 @@
+<div fxLayout="column" fxLayoutAlign="space-around center">
+  <div class="container" style="padding: 32px;">
+    <div class="jumbotron">
+      <h1>Introduction lesson! Hello world!</h1>
+      <p>This chapter is an introduction to Java programming language and helps us to understand basics of programming languages </p>
+    </div>
+  </div>
+  <div
+    fxLayout="row"
+    fxLayoutAlign="space-around center"
+    fxLayoutGap="32px"
+    style="padding: 32px"
+  >
+    <div
+      [innerHTML]="currentLesson.detailedDescription"
+      style="border: solid 2px black; border-radius: 16px; padding: 16px"
+    ></div>
+    <iframe
+      style="width: 100vh; height: 90vh; overflow: hidden;"
+      src="https://jdoodle.com/a/4Frm"
+    >
+    </iframe>
+  </div>
+</div>
+<router-outlet></router-outlet>

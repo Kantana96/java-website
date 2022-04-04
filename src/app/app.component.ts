@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LessonInfo } from './lesson-card/lesson-card.component';
 
 @Component({
   selector: 'app-root',
